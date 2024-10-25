@@ -4,6 +4,33 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello Develop06 World!");
+        GoalManager gM = new GoalManager();
+        int choice = 0;
+        while (choice != 6) {
+            Console.WriteLine("\n");
+            gM.DisplayScore();
+
+            Console.WriteLine("\nMenu options:\n   1. Create Goal\n   2. List Goals\n   3. Save Goals\n   4. Load Goals\n   5. Record Event\n   6. Quit");
+            Console.Write("Select a choice from the menu: ");
+            choice = int.Parse(Console.ReadLine());
+
+            switch (choice) {
+                case 1:
+                    gM.CreateGoal();
+                    break;
+                case 2:
+                    gM.ListGoals();
+                    break;
+                case 3:
+                    gM.SaveGoals();
+                    break;
+                case 4:
+                    gM.LoadGoals();
+                    break;
+                case 5:
+                    gM.RecordEvent();
+                    break;
+            }
+        }
     }
 }

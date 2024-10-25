@@ -1,0 +1,5 @@
+200
+SimpleGoal,simple,des of simple,10,False
+EternalGoal,eternal,des of eternal,20
+ChecklistGoal,checklist,des of checklist,30,0,3,300
+ChecklistGoal,negative,des of negative,-40,0,4,-400
