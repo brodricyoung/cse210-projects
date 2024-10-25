@@ -1,3 +1,11 @@
+/*
+For creativity, I added a rank system that allows a user to rank up with certain amounts 
+of points, and the gap in points increases with rank. I also added another class for 
+negative goals and made it similar to checklist goals but for deducting points.
+*/
+
+
+
 using System;
 
 class Program
